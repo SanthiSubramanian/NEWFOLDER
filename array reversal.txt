@@ -1,0 +1,35 @@
+// A Java program to find a array reversal
+import java.util.*;
+
+class reversearray {
+
+	// Find the peak element in the array
+	 static void reverse(int arr[])
+	{
+		int n = arr.length;
+		//System.out.println ("length :" +n);
+		int j = n-1;
+		int[] b = new int[n] ;
+		for (int i = 0; i < n ; i++) {
+		
+			b[j] = arr[i];
+			j = j-1;
+			
+		}
+		
+	for (int i=0; i< n; i++)	{
+	    System.out.print(b[i] + " ");
+	}
+	}
+
+	// Driver Code
+	public static void main(String[] args)
+	{
+		int arr[] = {10, 20, 15, 12, 23, 90,67,56 };
+	
+		System.out.println ("reverse array is: " );
+		reverse(arr);
+	}
+}
+
+// This code is contributed by Aditya Kumar (adityakumar129)
